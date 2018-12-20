@@ -36,16 +36,14 @@
 <div class="main">
     <div class="main-container">
         <ul>
-            <li><a href="#" id="1"><img src="../common/static/base/images/home_app.png" /><span>主页</span></a></li>
-            <!--
-             @if (myApps != null)
+            <li><a href="#" id="1"><img src="../common/static/base/images/home_app.png"/><span>主页</span></a></li>
+            @if (myApps != null)
             {
             foreach (SysMyapp myapp in myApps)
             {
             <li><a href="@myapp.MyappHomeUrl" id="app-@myapp.Id"><img src="@siteConfig.webosurl/Apps/@myapp.MyappCode/@myapp.MyappImg32"><span>@myapp.MyappName</span></a></li>
             }
             }
-            -->
             <div style="clear: both;"></div>
         </ul>
     </div>

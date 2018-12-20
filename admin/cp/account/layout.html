@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--SEO开始-->
+    <title>@ViewBag.Title - 账户 - 最好的企业信息化软件平台 Powered by @siteConfig.webcompany</title>
+    <meta name="description" content="@ViewBag.Description">
+    <meta name="keywords" content="@ViewBag.Keywords">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--应用css开始-->
+    @RenderSection("style")
+    <!--应用css结束-->
+</head>
+<body>
+
+
+@RenderBody()
+
+<!--公共js开始-->
+<script src="../common/static/lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../common/static/lib/function.js" type="text/javascript"></script>
+<script src="../common/static/base/js/base.js" type="text/javascript"></script>
+<!--公共js结束-->
+<!--应用js开始-->
+@RenderSection("script")
+<!--应用js结束-->
+</body>
+</html>

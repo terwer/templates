@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--SEO开始-->
+    <title>@ViewBag.Title - 工作台 - 后台管理中心 - 最好的企业信息化软件平台 Powered by @siteConfig.webcompany</title>
+    <meta name="description" content="@ViewBag.Description"/>
+    <meta name="keywords" content="@ViewBag.Keywords"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--SEO结束-->
+    <!--公共css开始-->
+    <link href="../common/static/base/css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="../common/static/lib/bootsharpv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <!--公共css结束-->
+    <!--应用css开始-->
+    @RenderSection("style", false)
+    <!--应用css结束-->
+</head>
+<body>
+<!--通用头部导航部分开始
+    ===============================================================================================================================-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a href="javascript:void(0);" class="current-app"> <img src="../common/static/base/images/app_ico.png" width="15" height="14"/> 工作台<b>通用版</b> </a></div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="/Apps/Bentch/Desk/Index">桌面</a></li>
+                <li><a href="/index.html">返回首页</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="icon-info">
+                    <span>
+                        您好，admin<br/>
+                        部门经理
+                    </span>
+            </div>
+            <div class="icon-option">
+                <i></i>
+                <div class="drop-box">
+                    <div class="arrow"></div>
+                    <ul class="drop-item">
+                        <li><a href="../../Setting">修改密码</a></li>
+                        <li><a href="#">在线帮助</a></li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">马上升级</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</nav>
+
+<!--通用头部导航部分结束
+    ===============================================================================================================================-->
+<!--内容区域开始-->
+@RenderBody()
+<!--内容区域结束-->
+<!--快速导航开始--->
+<div class="quick_apps_logo">
+    <ul class="quick_apps">
+        @foreach (var app in appList)
+        {
+        <li><a href="@app.MyappHomeUrl" id="app-@app.Id"><img src="@app.MyappImg32"/><span>@app.MyappName</span></a></li>
+        }
+    </ul>
+</div>
+<!--快速导航结束-->
+<!--公共底部开始-->
+<div id="footer">
+    <div class="copyright"></div>
+</div>
+<!--公共底部结束-->
+<!--公共js开始-->
+<script src="../common/static/lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../common/static/lib/bootsharpv3/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../common/static/lib/function.js" type="text/javascript"></script>
+<script src="../common/static/base/js/base.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../common/static/base/js/respond.min.js"></script>
+<script type="text/javascript" src="../common/static/base/js/html5shiv.js"></script>
+<![endif]-->
+<!--公共js结束-->
+<!--应用js开始-->
+@RenderSection("script", false)
+<!--应用js结束-->
+</body>
+</html>

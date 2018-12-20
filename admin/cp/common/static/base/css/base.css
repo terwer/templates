@@ -13,7 +13,7 @@ body{line-height:1.8;}
 /*顶部右边导航*/
 #navbar{float:left;}
 .nav-right{ float:right; }
-.nav-right .icon-info{ float:left; padding:0 10px 0 34px; height:50px; line-height:50px;background:url(../image/skin_icons.png) no-repeat 0 -416px;}
+.nav-right .icon-info{ float:left; padding:0 10px 0 34px; height:50px; line-height:50px;background:url(../images/skin_icons.png) no-repeat 0 -416px;}
 .nav-right .icon-info span{ display:block; padding-top:17px; color:#ebebeb; font-size:12px; line-height:20px; }
 .nav-right .icon-option{ position:relative; display:block; cursor:pointer; float:left; padding:0 15px; height:70px;background:#4D4E4E; }
 .nav-right .icon-option i{ display:block; width:20px; height:50px; background:url(../images/skin_icons.png) -199px -290px no-repeat; }
@@ -21,7 +21,7 @@ body{line-height:1.8;}
 .nav-right .icon-option:hover .drop-box{ display:block; }
 
 .drop-box{ display:none; position:absolute; top:50px; right:1px; }
-.drop-box .arrow{ position:absolute; display:block; top:0; right:15px; width:21px; height:11px; text-indent:-999999px; background:url(../image/skin_icons.png) no-repeat 0 -356px; }
+.drop-box .arrow{ position:absolute; display:block; top:0; right:15px; width:21px; height:11px; text-indent:-999999px; background:url(../images/skin_icons.png) no-repeat 0 -356px; }
 .drop-box .drop-item{ margin-top:10px; padding:10px; border:1px solid #b1b1b1; background:#fff; box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.2); }
 .drop-box .drop-item li a{ display:block; padding:8px 15px; color:#222; font-size:12px; line-height:1em; text-align:center; white-space:nowrap; }
 .drop-box .drop-item li a:hover{ color:#fff; text-decoration:none; background:#4D4E4E; }
