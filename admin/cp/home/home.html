@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--[if lte IE 6]><script type="text/javascript"> document.location.href = "/ie6update.html"; </script><![endif]-->
+    <meta charset="utf-8" />
+    <meta name="description" content="@ViewBag.Description" />
+    <meta name="keywords" content="@ViewBag.Keywords" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="@siteConfig.webosurl/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <title>桌面_BuguCMS</title>
+    <!--css start-->
+    <link href="static/css/index.css" rel="stylesheet" type="text/css" />
+    <!--css end-->
+</head>
+<body>
+
+
+<!--固定顶部部分 开始-->
+<div class="header clearfix">
+    <a href="javascript:void(0);" class="current-nav" style="display: block;">
+        <em class="menu-more-ico"></em><span id="g_mod_name">首页</span>
+    </a>
+    <div class="vh-avator-area">
+        <div class="gl-lang-container">
+            <div class="account-avator"><div class="account-avator-bg"></div></div>
+            <!-- <span class="account-name" id="g_username2">有炜（<b>超级管理员</b>）<a href="/Apps/Account/Admin/LoginOut">安全退出</a></span> -->
+            <span class="account-name">
+                您好，有炜 （<b>超级管理员</b>) <a href="/Apps/Account/Admin/LoginOut">安全退出</a>
+            </span>
+        </div>
+    </div>
+</div>
+<!--固定顶部部分 结束-->
+<!--主页主题部分 开始-->
+<div class="main">
+    <div class="main-container">
+        <ul>
+            <li><a href="#" id="1"><img src="../common/static/base/images/home_app.png" /><span>主页</span></a></li>
+            <!--
+             @if (myApps != null)
+            {
+            foreach (SysMyapp myapp in myApps)
+            {
+            <li><a href="@myapp.MyappHomeUrl" id="app-@myapp.Id"><img src="@siteConfig.webosurl/Apps/@myapp.MyappCode/@myapp.MyappImg32"><span>@myapp.MyappName</span></a></li>
+            }
+            }
+            -->
+            <div style="clear: both;"></div>
+        </ul>
+    </div>
+</div>
+<!--主页主题部分 结束-->
+
+<!--script start-->
+<script src="../common/static/lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="static/js/index.js" type="text/javascript"></script>
+<!--script end-->
+</body>
+</html>
