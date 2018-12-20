@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--[if lt IE 8]> <script type="text/javascript"> window.location.href = "/ie6update.html";</script> <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />    <!--seo结束-->
+    <!--seo开始-->
+    <title>组织架构_系统设置_C+企业云平台_打造中国办公软件第一品牌</title>
+    <!--seo结束-->
+
+    <!--页面头部开始-->
+    <link href="../../common/static/base/css/globle.css" rel="stylesheet" type="text/css"/>
+    <link href="../../common/static/base/css/head.css" rel="stylesheet" type="text/css"/>
+    <link href="../../common/static/base/css/foot.css" rel="stylesheet" type="text/css"/>
+
+    <link href="../../common/static/lib/bootstrap/css/bootstrap-3.2.0.css" rel="stylesheet" type="text/css"/>
+    <link href="../../common/static/lib/artDialog/css/ui-dialog.css" rel="stylesheet" type="text/css"/>
+    <link href="../../common/static/lib/jquery.bootgrid/jquery.bootgrid.css" rel="stylesheet" type="text/css"/>
+    <link href="../../common/static/lib/zTree/css/zTreeStyle/zTreeStyle.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        .layout-left {
+            display: inline;
+            float: left;
+            width: 190px;
+            position: relative;
+            z-index: 102;
+            *zoom: 1;
+            _height: 705px;
+            background-color: #ebf0f7;
+        }
+
+        .layout-right {
+            display: inline;
+            float: right;
+            width: 100%;
+            margin-left: -190px;
+            position: relative;
+            z-index: 101;
+            *zoom: 1;
+            _height: 705px;
+        }
+
+        .layout-content {
+            margin: 10px 10px 0 190px;
+            position: relative;
+            z-index: 102;
+            *zoom: 1;
+        }
+
+        /**左侧**/
+
+        .nav-side .ns-item {
+            background: #f3f8fc;
+            border-right: 1px solid #a4b8d9;
+            *zoom: 1;
+            min-height: 900px;
+            padding: 0px 0px 10px 0px;
+        }
+
+        .ns-item .c_left {
+            width: 100%;
+            position: relative;
+            zoom: 1;
+            background: url(../../common/static/base/images/c_left_btn.png) no-repeat;
+            margin-bottom: 10px;
+        }
+
+        .ns-item .c_left ul {
+            position: relative;
+            height: 38px;
+            z-index: 1;
+        }
+
+        .ns-item .c_left ul li {
+            width: 92px;
+            height: 38px;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 36px;
+            z-index: 1;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .ns-item .c_left ul li .oz0 {
+            margin-left: 30px;
+            text-shadow: white 0 1px 0;
+            color: #3C6692;
+        }
+
+        .ns-item .c_left ul li a:hover {
+            color: #000;
+        }
+    </style>
+    <!--页面头部结束-->
+</head>
+<body>
+<!--当前公司id-->
+<input type="hidden" id="CompNum" name="CompNum" value="@Session[teaCRMKeys.SESSION_USER_COMPANY_INFO_NUM]" />
+<!--公共头部开始-->
+<div id="header">
+    <div class="header">
+        <a id="logo" class="logo" href="/" title="C+ CRM"></a>
+        <ul class="head-nav" id="head-nav">
+            <li id="head-nav-Desktop" class="selected" ><a href="/Desktop/">桌面</a></li>
+            <li id="head-nav-customer"><a href="/Apps/CRM/">客户</a></li>
+            <li id="head-nav-Index"><a href="/Apps/Index/">应用</a></li>
+            <li id="head-nav-Settings"><a href="/Apps/Settings/Department/">设置</a></li>
+            <li id="head-nav-More"><a href="javascript:void(0);">更多</a></li>
+        </ul>
+        <!--更多开始-->
+        <div id="more-content" class="hide">
+            <ul class="head-nav" id="head-more-nav" style="background: #1173ee; margin: 10px 10px -10px 10px;">
+                <li id="head-nav-sale"><a href="/Apps/Sale/">销售</a></li><li id="head-nav-product"><a href="/Apps/Product/">产品</a></li><li id="head-nav-service"><a href="/Apps/Service/">服务</a></li>
+            </ul>
+        </div>
+        <!--更多结束-->
+        <!--欢迎开始-->
+        <div class="exit"><span id="sayHello">欢迎您，</span>倚楼听雨 &nbsp;&nbsp;&nbsp;<a href="/Account/Logout/">安全退出</a></div>
+        <!--欢迎结束-->
+    </div>
+
+    <!--二级菜单开始-->
+    <div id="main-menu">
+
+        <!--应用市场菜单-->
+        <div id="sub-nav-Index" class="head-nav-header2 hide">
+            <ul class="head-head-nav2">
+                <li class="selected"><a href="/Apps/Market/">应用首页</a></li>
+                <li><a href="" >免费版</a></li>
+                <li><a href="">收费版</a></li>
+            </ul>
+        </div>
+
+        <!--设置菜单-->
+        <div id="sub-nav-Settings" class="head-nav-header2 hide">
+            <ul class="head-head-nav2">
+                <li class="selected"><a href="/Apps/Settings/Department/" >组织架构</a></li>
+                <li><a href="/Apps/Settings/Role/">角色管理</a></li>
+                <li><a href="/Apps/Settings/Users/">用户管理</a></li>
+                <li><a href="/Apps/Settings/AppMaker/">应用定制</a></li>
+            </ul>
+        </div>
+
+        <!--客户模块菜单-->
+        <div id="menu-customer" class="head-nav-header2 hide">
+            <ul class="head-head-nav2">
+                <li id="all" class="selected"><a href="/Apps/CRM/Index/">全部客户</a></li>
+                <li id="contact"><a href="/Apps/CRM/Contact/">我的人脉</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <!--二级菜单结束-->
+</div>
+<!--公共头部结束-->
+
+<!--内容区域开始-->
+<div>
+    <!--左侧开始-->
+    <div class="layout-left">
+        <div id="nav-side" class="nav-side">
+            <div class="ns-item">
+                <!--树形展示开始-->
+                <ul id="department_tree" class="ztree"></ul>
+                <!--树形展示结束-->
+            </div>
+        </div>
+    </div>
+    <!--左侧结束-->
+    <!-- 右侧开始 -->
+    <div class="layout-right">
+        <div class="layout-content">
+            <div style="margin: 0px 20px;">
+                <table id="grid-data" class="table table-condensed table-hover table-striped table-bordered" data-selection="true" data-multi-select="true">
+                    <thead>
+                    <tr>
+                        <th data-column-id="UserLname" data-order="asc">登陆名称</th>
+                        <th data-column-id="UserTname" data-order="desc">显示名称</th>
+                        <th data-column-id="UserPhone" data-order="desc">手机</th>
+                        <th data-column-id="UserEmail">邮箱</th>
+                        <th data-column-id="UserTel"  >电话</th>
+                        <th data-column-id="UserQq" >QQ</th>
+                        <th data-column-id="DepId" >所属部门</th>
+                        <th data-column-id="RoleId" >角色</th>
+                        <th data-column-id="DataIds" >数据范围</th>
+                        <th data-column-id="UserPosition" >职位</th>
+                        <th data-column-id="UserJobstatus" >职位状态</th>
+                        <th data-column-id="UserEnable" data-formatter="UserEnable">用户状态</th>
+                        <th data-column-id="Id"  data-type="numeric" data-identifier="true" data-formatter="commands">操作</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <!--右侧结束-->
+</div>
+<!--内容区域结束-->
+
+<!--公共底部开始-->
+<!--  <div id="footer">
+          <div class="copyright"> copyright © 2014-2024 teaCRM.net All Rights Reserved.</div>
+      </div>-->
+<!--公共底部结束-->
+
+<!--js开始-->
+<script src="../../common/static/lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="../../common/static/lib/function.js" type="text/javascript"></script>
+<script src="../../common/static/base/js/layout.js" type="text/javascript"></script>
+
+<script src="../../common/static/lib/json/json2.js" type="text/javascript"></script>
+<script src="../../common/static/lib/bootstrap/js/bootstrap-3.2.0.js" type="text/javascript"></script>
+<script src="../../common/static/lib/jquery.bootgrid/jquery.bootgrid.js" type="text/javascript"></script>
+<script src="../../common/static/lib/cookie/jquery.cookie.js" type="text/javascript"></script>
+<script src="../../common/static/lib/artDialog/dist/dialog-plus-min.js" type="text/javascript"></script>
+<script src="../../common/static/lib/zTree/js/jquery.ztree.all-3.5.min.js" type="text/javascript"></script>
+<script src="../../common/static/lib/zTree/js/jquery.ztree.core-3.5.min.js" type="text/javascript"></script>
+<script src="../../common/static/lib/zTree/js/jquery.ztree.excheck-3.5.min.js" type="text/javascript"></script>
+<script src="../../common/static/lib/zTree/js/jquery.ztree.exedit-3.5.min.js" type="text/javascript"></script>
+
+<script src="../static/js/user.js"></script>
+<!--js结束-->
+</body>
+</html>

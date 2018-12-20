@@ -4,7 +4,7 @@
 #header{background: #3083EB;position: relative;z-index: 3;}
 .header {height:50px;min-width:800px;}
 .header .logo {
-background: url(/Themes/default/base/images/logo.jpg) no-repeat center;
+background: url(../images/logo.png) no-repeat center;
 float: left;
 height: 27px;
 margin: 11px 40px 0 20px;
